@@ -1,8 +1,11 @@
 
 public interface BasicOperations {
 
-	public void addMethod(int x, int y); //simple addition
-	public void subMethod(int x, int y);
-	public void multMethod(int x, int y);
-	public void divMethod(double x, double y);
+	public String addMethod(int x, int y); // simple addition
+
+	public String subMethod(int x, int y);
+
+	public String multMethod(int x, int y);
+
+	public String divMethod(double x, double y);
 }

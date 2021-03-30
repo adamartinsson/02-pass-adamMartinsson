@@ -1,34 +1,29 @@
+public class BasicCalculator implements BasicOperations {
 
-public class BasicCalculator {
+	public BasicCalculator() {
 
-	
-	public BasicCalculator(){
-		
 	}
-	
-		public int addMethod(int x, int y){
-			return x+y;
+
+	// Defining code to be executed when method is called
+	public String addMethod(int x, int y) {
+		return "The result of " + x + " + " + y + " = " + (x + y);
+	}
+
+	public String subMethod(int x, int y) {
+		return "The result of " + x + " - " + y + " = " + (x - y);
+	}
+
+	public String multMethod(int x, int y) {
+		return "The result of " + x + " * " + y + " = " + (x * y);
+	}
+
+	// Catching any zero-divisions, else printing results
+	public String divMethod(double x, double y) {
+		if (y == 0) {
+			return "You cannot divide by 0!";
+		} else {
+			return "The result of " + x + " / " + y + " = " + (x / y);
 		}
-		
-		public int subMethod(int x, int y) {
-			return x-y;
-		}
-		
-		public int multMethod(int x, int y){
-			 return x*y;
-		}
-		 
-		public double divMethod(double x, double y) {
-			if (y==0) {
-				 System.out.print("You cannot divide by ");
-				 return y;
-			 } else {
-				 return x/y;
-			 }
-		}
-		
-	
-		
-		
-	
+	}
+
 }
