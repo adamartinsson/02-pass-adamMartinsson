@@ -11,6 +11,7 @@ public class BasicCalculator implements BasicOperations {
 
 	public String subMethod(int x, int y) {
 		return "The result of " + x + " - " + y + " = " + (x - y);
+		
 	}
 
 	public String multMethod(int x, int y) {
@@ -19,7 +20,7 @@ public class BasicCalculator implements BasicOperations {
 
 	// Catching any zero-divisions, else printing results
 	public String divMethod(double x, double y) {
-		if (y == 0) {
+		if (y == 0.0) {
 			return "You cannot divide by 0!";
 		} else {
 			return "The result of " + x + " / " + y + " = " + (x / y);
