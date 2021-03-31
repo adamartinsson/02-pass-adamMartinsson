@@ -13,8 +13,8 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedOpera
 		return "The square root of " + x + " is: " + (Math.sqrt(x));
 	}
 
-	public String randMethod() {
-		return "Your random number (0-10) is: " + rand.nextInt(10);
+	public String absMethod(int x) {
+		return "The absolute value of " + x + " is: " + Math.abs(x);
 	}
 
 	public String evenMethod(int x) {

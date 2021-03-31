@@ -22,8 +22,8 @@ public class Main {
 		System.out.println("Advanced calculations:\n");
 
 		// Evoking methods
-		System.out.println(a.sqMethod(9));
-		System.out.println(a.randMethod());
+		System.out.println(a.sqMethod(0));
+		System.out.println(a.absMethod(1));
 		System.out.println(a.evenMethod(7));
 		System.out.println(a.maxMethod(39, 40));
 		System.out.println(a.minMethod(25, 25));
