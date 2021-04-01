@@ -64,59 +64,59 @@ class BasicCalculatorTest {
 		int result = x - y;
 		assertEquals("The result of " + x + " - " + y + " = " + result, t.subMethod(x, y));
 	}
-	
-	//Testing multMethod
-	
+
+	// Testing multMethod
+
 	@Test
 	void testmultMethod1() {
 		int x = rand.nextInt(10);
 		int y = rand.nextInt(10);
-		int result = x*y;
+		int result = x * y;
 		assertEquals("The result of " + x + " * " + y + " = " + result, t.multMethod(x, y));
-		
+
 	}
-	
+
 	@Test
 	void testmultMethod2() {
-		
-		int x = rand.nextInt(0+10)-10;
-		int y = rand.nextInt(0+10)-10;
-		int result = x*y;
+
+		int x = rand.nextInt(0 + 10) - 10;
+		int y = rand.nextInt(0 + 10) - 10;
+		int result = x * y;
 		assertEquals("The result of " + x + " * " + y + " = " + result, t.multMethod(x, y));
 	}
-	
+
 	@Test
 	void testmultMethod3() {
 		int x = 0;
 		int y = 0;
-		int result = x*y;
+		int result = x * y;
 		assertEquals("The result of " + x + " * " + y + " = " + result, t.multMethod(x, y));
 	}
-	
-	//Testing divMethod
-	
+
+	// Testing divMethod
+
 	@Test
 	void testdivMethod1() {
 		double x = rand.nextDouble();
 		double y = rand.nextDouble();
-		double result = x/y;
+		double result = x / y;
 		assertEquals("The result of " + x + " / " + y + " = " + result, t.divMethod(x, y));
-		
+
 	}
-	
+
 	@Test
 	void testdivMethod2() {
-		double x = rand.nextDouble()-1.01;
-		double y = rand.nextDouble()-1.01;
-		double result = x/y;
+		double x = rand.nextDouble() - 1.01;
+		double y = rand.nextDouble() - 1.01;
+		double result = x / y;
 		assertEquals("The result of " + x + " / " + y + " = " + result, t.divMethod(x, y));
 	}
-	
+
 	@Test
 	void testdivMethod3true() {
 		double x = rand.nextDouble();
 		double y = 0;
 		assertEquals("You cannot divide by 0!", t.divMethod(x, y));
 	}
-	
+
 }

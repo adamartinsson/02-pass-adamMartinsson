@@ -1,14 +1,11 @@
-import java.util.*;
-
 public class AdvancedCalculator extends BasicCalculator implements AdvancedOperations {
-
-	Random rand = new Random();
 
 	public AdvancedCalculator() {
 
 	}
 
 	// Defining code to be executed when method is called
+
 	public String sqMethod(double x) {
 		return "The square root of " + x + " is: " + (Math.sqrt(x));
 	}

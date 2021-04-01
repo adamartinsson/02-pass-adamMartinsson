@@ -1,7 +1,6 @@
 public class Main {
 
 	public static void main(String[] args) {
-	
 
 		// Instantiating object of BasicCalculator
 		BasicCalculator b = new BasicCalculator();
@@ -23,12 +22,10 @@ public class Main {
 
 		// Evoking methods
 		System.out.println(a.sqMethod(0));
-		System.out.println(a.absMethod(1));
+		System.out.println(a.absMethod(-9));
 		System.out.println(a.evenMethod(7));
 		System.out.println(a.maxMethod(39, 40));
-		System.out.println(a.minMethod(25, 25));
-		
-	
+		System.out.println(a.minMethod(26, 25));
 
 	}
 }

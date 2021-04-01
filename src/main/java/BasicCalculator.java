@@ -11,7 +11,7 @@ public class BasicCalculator implements BasicOperations {
 
 	public String subMethod(int x, int y) {
 		return "The result of " + x + " - " + y + " = " + (x - y);
-		
+
 	}
 
 	public String multMethod(int x, int y) {
